@@ -1,0 +1,21 @@
+DPsoftware/
+├── backend/                  # FastAPI app
+│   ├── app/
+│   │   ├── main.py           # FastAPI entry point
+│   │   ├── models/           # Pydantic + SQLAlchemy models
+│   │   ├── services/         # Forecasting logic, Celery tasks
+│   │   ├── api/              # Route definitions
+│   │   ├── db/               # DB utils, migrations
+│   │   └── config.py         # Settings
+│   └── requirements.txt
+├── frontend/                 # React + Tailwind UI
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   └── App.tsx
+│   └── package.json
+├── worker/                   # Celery app
+│   └── tasks.py
+├── docker-compose.yml
+├── .env
+└── README.md
